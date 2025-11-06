@@ -26,7 +26,7 @@ docs/             # Design notes, specifications, and experimental logs
 4. Review `configs/` for connection details, especially Neo4j and FAISS services.
 
 > **Note**  
-> This repository intentionally resides outside OneDrive to avoid synchronization conflicts. Historical prototypes live under `prelim-research/`.
+> This repository intentionally resides outside OneDrive (`C:\Users\saksh\Desktop\graphrag-dyref`) to avoid synchronization conflicts. Historical prototypes live under `prelim-research/`.
 
 ## Roadmap
 
