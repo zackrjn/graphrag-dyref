@@ -1,15 +1,15 @@
-# Update these handles to match actual GitHub usernames once the repository is pushed.
-* @saksham
+# Update handles if additional contributors join the project.
+* @zackrjn
 
-data_ingestion/ @saksham
-processing/ @saksham
-nlp/ @saksham
-graph/ @saksham
-retrieval/ @saksham
-services/ @saksham
-eval/ @saksham
-scripts/ @saksham
-notebooks/ @saksham
-configs/ @saksham
-docs/ @saksham
+data_ingestion/ @zackrjn
+processing/ @zackrjn
+nlp/ @zackrjn
+graph/ @zackrjn
+retrieval/ @zackrjn
+services/ @zackrjn
+eval/ @zackrjn
+scripts/ @zackrjn
+notebooks/ @zackrjn
+configs/ @zackrjn
+docs/ @zackrjn
 
