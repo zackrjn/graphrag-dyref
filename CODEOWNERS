@@ -1,0 +1,15 @@
+# Update these handles to match actual GitHub usernames once the repository is pushed.
+* @saksham
+
+data_ingestion/ @saksham
+processing/ @saksham
+nlp/ @saksham
+graph/ @saksham
+retrieval/ @saksham
+services/ @saksham
+eval/ @saksham
+scripts/ @saksham
+notebooks/ @saksham
+configs/ @saksham
+docs/ @saksham
+

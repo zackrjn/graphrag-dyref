@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dyref-graphrag"
+version = "0.1.0"
+description = "Dynamic refinement GraphRAG pipelines over PMC and arXiv corpora"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT License" }
+authors = [
+    { name = "Saksham", email = "contact@example.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=16.0",
+    "tqdm>=4.66",
+    "rich>=13.7",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "requests>=2.32",
+    "scipy>=1.13",
+    "networkx>=3.3"
+]
+
+[project.optional-dependencies]
+nlp = [
+    "spacy>=3.7",
+    "scispacy>=0.5.4",
+    "keybert>=0.8.4",
+    "yake>=0.4.8",
+    "transformers>=4.43",
+    "sentence-transformers>=3.0",
+    "accelerate>=0.33"
+]
+retrieval = [
+    "faiss-cpu>=1.8",
+    "neo4j>=5.24",
+    "weaviate-client>=4.6",
+    "rank-bm25>=0.2.2"
+]
+dev = [
+    "black>=24.8",
+    "isort>=5.13",
+    "ruff>=0.5.7",
+    "mypy>=1.11",
+    "pytest>=8.3",
+    "pytest-asyncio>=0.23",
+    "pre-commit>=3.7"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+combine_as_imports = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "I", "B", "UP", "N", "S"]
+ignore = ["B905"]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_unused_configs = true
+
+
